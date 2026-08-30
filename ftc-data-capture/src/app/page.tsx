@@ -1,17 +1,15 @@
 "use client";
 
+import Camera from "./components/Camera";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold">
-          Vanta Part Collector
-        </h1>
+    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6">
+      <h1 className="text-3xl font-bold mb-6">
+        Vanta Part Collector
+      </h1>
 
-        <p className="mt-3 text-zinc-400">
-          Dataset collection tool
-        </p>
-      </div>
+      <Camera />
     </main>
   );
 }
